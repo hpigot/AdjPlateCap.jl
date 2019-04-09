@@ -7,3 +7,6 @@ os:
 julia:
   - 1.0
   - 1.1
+
+after_success:
+- julia -e 'cd(Pkg.dir("AdjPlateCap")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
