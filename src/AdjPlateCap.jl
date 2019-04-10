@@ -6,7 +6,7 @@ function capacitance(e2,e3,h2,h3,w,s,x)
     # e2, e3. substrate layer relative permittivity [1]
     # h2, h3. substrate layer depth [m]
     # w, s, x. Plate length, separation, width [m]
-
+    
     # reparametrization
     l = 2*x+s;
     # permittivity of free space [F/m]
